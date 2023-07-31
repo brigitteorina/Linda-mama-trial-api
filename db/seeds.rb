@@ -6,7 +6,29 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 # seed data for diet_blogs
-DietBlog.create(title: "Diet Blog 1", image: "https://images.unsplash.com/photo-1611095777879-9e9a3e0a5b7a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", content: "This is the first diet blog")
-DietBlog.create(title: "Diet Blog 2", image: "https://images.unsplash.com/photo-1611095777879-9e9a3e0a5b7a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", content: "This is the second diet blog")
-DietBlog.create(title: "Diet Blog 3", image: "https://images.unsplash.com/photo-1611095777879-9e9a3e0a5b7a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", content: "This is the third diet blog")
-DietBlog.create(title: "Diet Blog 4", image: "https://images.unsplash.com/photo-1611095777879-9e9a3e0a5b7a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", content: "This is the fourth diet blog")
+#
+diet_blogs = DietBlog.create([
+  {
+    title: "Diet Blog 1",
+    image: "https://plus.unsplash.com/premium_photo-1664453892264-3ba24a55bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJlZ25hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
+  },
+  {
+    title: "Diet Blog 2",
+    image: "https://plus.unsplash.com/premium_photo-1664453892264-3ba24a55bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJlZ25hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
+  },
+  {
+    title: "Diet Blog 3",
+    image: "https://plus.unsplash.com/premium_photo-1664453892264-3ba24a55bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJlZ25hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
+  },
+  {
+    title: "Diet Blog 4",
+    image: "https://plus.unsplash.com/premium_photo-1664453892264-3ba24a55bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJlZ25hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
+  },
+])
+
+# seed data for diet_tips
+
