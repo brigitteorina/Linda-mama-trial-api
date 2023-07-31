@@ -11,12 +11,8 @@ class DietBlogsController < ApplicationController
   end
 
   def create
-    @diet_blog = DietBlog.new(diet_blog_params)
-    if @diet_blog.save
-      render json: @diet_blog
-    else
-      render 'new'
-    end
+    diet_blog = DietBlog.create(diet_blog_params)
+    render json: diet_blog
   end
 
   private
