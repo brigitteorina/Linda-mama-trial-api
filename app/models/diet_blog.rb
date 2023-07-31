@@ -1,0 +1,2 @@
+class DietBlog < ApplicationRecord
+end
