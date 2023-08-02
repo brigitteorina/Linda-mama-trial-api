@@ -1,0 +1,2 @@
+class DietQuestion < ApplicationRecord
+end
