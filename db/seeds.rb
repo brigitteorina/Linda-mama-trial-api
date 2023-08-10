@@ -5,12 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-# seed data for diet_blogs
-#
+# seed data for diet_bl
+DietBlog.destroy_all
+Message.destroy_all
 diet_blogs = DietBlog.create([
   {
     title: "General Health",
-    image: "https://plus.unsplash.com/premium_photo-1664453892264-3ba24a55bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJlZ25hbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    image: "https://res.cloudinary.com/dyptfz8yk/image/upload/v1691580700/premium_photo-1664453892264-3ba24a55bec1_yly3hp.jpg",
     content: """
               Nutrition plays a crucial role in a healthy pregnancy, as it not only supports the development of the baby but also ensures the well-being of the mother. Here are some essential guidelines on what to eat and what to avoid during pregnancy:
 
@@ -49,7 +50,7 @@ Remember, each pregnancy is unique, so it's essential to consult with your healt
   },
   {
     title: "Eating for Two: Nourishing Your Pregnancy Journey ",
-    image: "https://images.unsplash.com/photo-1501516834911-269dbce099a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+    image: "https://res.cloudinary.com/dyptfz8yk/image/upload/v1691581559/photo-1501516834911-269dbce099a0_zohohy.jpg",
     content: """
     <h3>Introduction:</h3>
 
@@ -75,7 +76,7 @@ dietitian to tailor your diet plan according to your specific requirements.
   },
   {
     title: "Nurturing Life: The Vital Role of Water",
-    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+    image: "https://res.cloudinary.com/dyptfz8yk/image/upload/v1691581612/photo-1551538827-9c037cb4f32a_qylik9.jpg",
     content: """
     <h3>Introduction:</h3>
 Pregnancy is a miraculous journey that demands special care and attention to ensure the well-being of both the mother and the growing baby. As the foundation of life, water plays a crucial role in supporting various physiological functions and promoting a healthy pregnancy. In this blog, we delve into the significance of water during pregnancy, highlighting its benefits, recommended intake, and practical tips for staying adequately hydrated.
@@ -129,7 +130,7 @@ As an expecting mother, your journey to nurturing life starts with nurturing you
   },
   {
     title: "Understanding and Managing Morning Sickness",
-    image: "https://plus.unsplash.com/premium_photo-1664376075271-b9e75c3bf11c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1916&q=80",
+    image: "https://res.cloudinary.com/dyptfz8yk/image/upload/v1691581651/premium_photo-1664376075271-b9e75c3bf11c_bqutdl.jpg",
     content: """
     <h3>Introduction:</h3>
 
@@ -185,7 +186,7 @@ symptoms.</li>
   },
   {
     title: "Nurturing Your Baby Bump: Healthy Snacking",
-    image:"https://images.unsplash.com/photo-1504387720438-88468770d0fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGhlYWx0aHklMjBzbmFja3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    image:"https://res.cloudinary.com/dyptfz8yk/image/upload/v1691581685/Linda-Mama%20diet%20blog/photo-1504387720438-88468770d0fc_heuofv.jpg",
     content: """
     <h3>Introduction:</h3>
     Pregnancy is a transformative journey marked by incredible changes both inside and outside the
@@ -212,7 +213,7 @@ symptoms.</li>
   },
   {
     title: "The Importance of a Balanced Diet ",
-    image:"https://plus.unsplash.com/premium_photo-1664640733870-15cb6a5b6ee6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    image:"https://res.cloudinary.com/dyptfz8yk/image/upload/v1691581706/Linda-Mama%20diet%20blog/premium_photo-1664640733870-15cb6a5b6ee6_wectyy.jpg",
     content: """
     <h3>Introduction:</h3>
     <p>Pregnancy is a special and critical time in a woman's life. During these nine months, a balanced diet becomes even more essential as it directly impacts the health and well-being of both the expectant mother and her developing baby. A balanced diet provides the necessary nutrients, vitamins, and minerals that are crucial for the healthy growth and development of the baby. In this blog, we will explore the reasons why a balanced diet is so important for expectant ladies.</p>
@@ -242,3 +243,26 @@ symptoms.</li>
 ])
 
 # seed data for diet_tips
+
+
+puts 'Seeding mothers...'
+
+Mother.create!(name: 'Zahra', age: 20, email: 'zahra@gmail.com')
+Mother.create!(name: 'Grackle', age: 32, email: 'grack@gmail.com')
+Mother.create!(name: 'Bree', age: 28, email: 'bree@example.com')
+Mother.create!(name: 'Dovey', age: 39, email: 'dovey@gmail.com')
+
+puts 'Seeding messages...'
+
+# Assuming you have the association set up between Message and Mother
+zahra = Mother.find_by(name: 'Zahra')
+grackle = Mother.find_by(name: 'Grackle')
+bree = Mother.find_by(name: 'Bree')
+dovey = Mother.find_by(name: 'Dovey')
+
+Message.create!(content: 'Scheduled for tests', sender: 'Zahra', mother: zahra)
+Message.create!(content: 'Doing well', sender: 'Grackle', mother: grackle)
+Message.create!(content: 'Delivering soon', sender: 'Bree', mother: bree)
+Message.create!(content: 'Having nausea since yesterday', sender: 'Dovey', mother: dovey)
+
+puts '✅ Done seeding!'

@@ -18,6 +18,6 @@ class DietBlogsController < ApplicationController
   private
 
   def diet_blog_params
-    params.require(:diet_blog).permit(:title, :image, :content)
+    params.require(:diet_blog).permit(:title, :image, :content, :page)
   end
 end
